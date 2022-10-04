@@ -18,3 +18,5 @@ window.addEventListener('scroll',()=> {
         contentt.classList.remove('activserv');
     }
 });
+
+

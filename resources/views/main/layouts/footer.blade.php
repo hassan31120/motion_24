@@ -13,7 +13,7 @@
                                         الان فقط ب<strong class=" text-light fw-bolder"> 192 </strong> ريال</h1>
 
                                     <div class=" col-md-12 text-center mt-3">
-                                        <a href="{{ $setting->link }}" data-aos="fade-up" ata-aos-offset="300" target="_blank"
+                                        <a href="{{ $setting->link }}" target="_blank" data-aos="fade-up" ata-aos-offset="300"
                                             data-aos-delay="50" class="btn btn-success  btn-lg fw-bold" role="button">
                                             <h2 class="fw-bold">واتساب</h2>
                                         </a>
@@ -28,7 +28,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-6 col-lg-6 ">
                                 <div class="copyright-text ">
-                                    <p class=" text-light">حقوق الطبع والنشرCopyright &copy; لعام2022 محفوظة لشركة SIGMA
+                                    <p class=" text-light">حقوق الطبع والنشرCopyright &copy; لعام2022 محفوظة لشركة  <strong style="color:rgb(31, 92, 92)">مؤسسة المني</strong>
                                         أو الشركات
                                         التابعة لها</p>
                                 </div>
@@ -39,7 +39,11 @@
         </footer>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    {{-- <script src="./js/jquery/jquery-3.4.1.min.js"></script> --}}
     <script src="{{ asset('main/js/index.js') }}"></script>
-    </body>
+    <script>
 
-    </html>
+    </script>
+</body>
+
+</html>
