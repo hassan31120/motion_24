@@ -19,12 +19,10 @@
         </div>
     </div>
     <!--service-->
-    <h1 class="text-center mb-5 mt-5 fw-bold " data-aos="fade-up" data-aos-offset="250" data-aos-delay="50"
-        data-aos-duration="1000" data-aos-easing="ease-in-out" style="color: #1c138b
+    <h1 class="text-center mb-5 mt-5 fw-bold " style="color: #1c138b
         ;" id="services">اعمالنا</h1>
 
-    <div class="container" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
-        data-aos-easing="ease-in-out">
+    <div class="container">
         <div class="row d-flex justify-content-between">
             @foreach ($links as $link)
                 <div class="col-lg-4 col-sm-6">

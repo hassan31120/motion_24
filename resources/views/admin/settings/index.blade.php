@@ -25,7 +25,7 @@
                                         <th class="text-uppercase text-secondary font-weight-bolder opacity-7 ps-2">
                                             لينك الواتساب</th>
                                         <th class="text-uppercase text-secondary font-weight-bolder opacity-7">
-                                            البانر </th>
+                                            القيمة </th>
                                         <th class="text-center text-uppercase text-secondary font-weight-bolder opacity-7">
                                             تعديل</th>
                                     </tr>
@@ -41,7 +41,7 @@
 
                                             <td>
                                                 <p class="text-xs font-weight-bold mb-0" style="margin-right: 20px">
-                                                    <img src="{{ asset($setting->image) }}" alt="Banner" width="220px" height="100px">
+                                                    {{ $setting->value }}
                                                 </p>
                                             </td>
 

@@ -19,7 +19,7 @@
         </div>
     </div>
     <!--about us-->
-    <div class="container abuoutUs_Js">
+    <div class="container">
         <div class="row row d-flex justify-content-between mt-3">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card text-center textcardCSS">
@@ -58,7 +58,7 @@
     <!--section image-->
     <!--service-->
     <h1 class="text-center pt-5 mb-5 fw-bold" id="services" style="color:#dca454;">اعمالنا</h1>
-    <div class="container service_js">
+    <div class="container">
         <div class="row d-flex justify-content-between">
             @foreach ($links as $link)
                 <div class="col-lg-4 col-sm-6">
