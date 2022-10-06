@@ -24,8 +24,7 @@
                                     <th class="text-uppercase text-secondary font-weight-bolder opacity-7 ps-2">
                                         الرقم</th>
 
-                                        <th class="text-uppercase text-secondary font-weight-bolder opacity-7 ps-2">
-                                            لينك الواتساب</th>
+
 
                                     <th class="text-center text-uppercase text-secondary font-weight-bolder opacity-7">
                                         منذ</th>
@@ -53,19 +52,6 @@
                                             <p class="text-xs font-weight-bold mb-0">لا يوجد رقم</p>
                                         </td>
                                         @endisset
-
-                                        @isset($user->link)
-                                            <td>
-                                                <p class="text-xs font-weight-bold mb-0">
-                                                     <a href="{{ $user->link }}" target="_blank">Your Link</a>
-                                                </p>
-                                            </td>
-                                        @else
-                                        <td>
-                                            <p class="text-xs font-weight-bold mb-0">لا يوجد لينك</p>
-                                        </td>
-                                        @endisset
-
 
                                         <td class="align-middle text-center">
 
