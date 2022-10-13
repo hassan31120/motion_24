@@ -24,6 +24,10 @@
 
                                         <th class="text-uppercase text-secondary font-weight-bolder opacity-7 ps-2">
                                             لينك الواتساب</th>
+                                        <th class="text-uppercase text-secondary font-weight-bolder opacity-7 ps-2">
+                                            الفيديو الأساسي</th>
+                                        <th class="text-uppercase text-secondary font-weight-bolder opacity-7 ps-2">
+                                            البانر</th>
                                         <th class="text-uppercase text-secondary font-weight-bolder opacity-7">
                                             القيمة </th>
                                         <th class="text-center text-uppercase text-secondary font-weight-bolder opacity-7">
@@ -36,6 +40,18 @@
                                             <td>
                                                 <p class="text-xs font-weight-bold mb-0" style="margin-right: 20px">
                                                     <a href="{{ $setting->link }}" target="_blank">Your Link</a>
+                                                </p>
+                                            </td>
+
+                                            <td>
+                                                <p class="text-xs font-weight-bold mb-0" style="margin-right: 20px">
+                                                    <a href="{{ $setting->v_link }}" target="_blank">Click here</a>
+                                                </p>
+                                            </td>
+
+                                            <td>
+                                                <p class="text-xs font-weight-bold mb-0" style="margin-right: 20px">
+                                                    <img src="{{ asset($setting->image) }}" alt="banner" width="180" height="100">
                                                 </p>
                                             </td>
 

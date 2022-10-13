@@ -43,6 +43,33 @@
                                                         <div class="row">
                                                             <div class="col-md-12 mb-4">
                                                                 <div class="form-outline">
+                                                                    <label class="form-label" for="v_link"
+                                                                        style="font-size: 18px">الفيديو الأساسي</label>
+                                                                    <input type="text" name="v_link" id="v_link"
+                                                                        class="form-control form-control-lg formborderCSS" value="{{ $setting->v_link }}" required />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-6 mb-4">
+                                                                <div class="form-outline">
+                                                                    <label class="form-label" for="image"
+                                                                        style="font-size: 18px">البانر</label>
+                                                                    <input type="file" name="image" id="image"
+                                                                        class="form-control form-control-lg formborderCSS"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 mb-4">
+                                                                <div class="form-outline">
+                                                                    <img src="{{ asset($setting->image) }}" alt="banner" width="300" height="180">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-12 mb-4">
+                                                                <div class="form-outline">
                                                                     <label class="form-label" for="value"
                                                                         style="font-size: 18px">القيمة</label>
                                                                     <input type="text" name="value" id="value"

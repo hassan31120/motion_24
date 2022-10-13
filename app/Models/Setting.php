@@ -11,6 +11,7 @@ class Setting extends Model
 
     protected $fillable = [
         'link',
+        'v_link',
         'image',
         'value'
     ];

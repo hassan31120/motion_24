@@ -52,7 +52,20 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- video section -->
+    <div class="container">
+        <div class="row d-flex justify-content-center videosectioncontsinaer">
+            <div class="col-lg-8 col-md-10 col-sm-12 videosection" >
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class=" rounded" src="{{ $setting->v_link }}" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--section image-->
@@ -104,5 +117,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="view text-center">
+        <img src="{{ asset($setting->image) }}" class="img-fluid" alt="sample image">
     </div>
 @endsection
