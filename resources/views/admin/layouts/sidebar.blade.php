@@ -42,6 +42,24 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link {{ Request::path() == 'admin/prices' ? 'active' : '' }}"
+                        href="{{ route('admin.prices') }}">
+                        <div class="text-white text-center ms-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <span class="nav-link-text me-1">الأسعار</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ Request::path() == 'admin/partners' ? 'active' : '' }}"
+                        href="{{ route('admin.partners') }}">
+                        <div class="text-white text-center ms-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <span class="nav-link-text me-1">الشركاء</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link {{ Request::path() == 'admin/links' ? 'active' : '' }}"
                         href="{{ route('admin.links') }}">
                         <div class="text-white text-center ms-2 d-flex align-items-center justify-content-center">

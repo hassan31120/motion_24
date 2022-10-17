@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\LinksController;
+use App\Http\Controllers\Admin\PartnerController;
+use App\Http\Controllers\Admin\PriceController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\MainController;
@@ -47,16 +49,29 @@ Route::group(['prefix' => 'admin', 'middleware' => 'isAdmin'], function () {
     Route::post('/admin/update/{id}', [UsersController::class, 'Adminupdate'])->name('admin.admin.update');
     Route::get('/admin/destroy/{id}', [UsersController::class, 'Admindestroy'])->name('admin.admin.destroy');
 
-     // Links
-     Route::get('/links', [LinksController::class, 'index'])->name('admin.links');
-     Route::get('/link/create', [LinksController::class, 'create'])->name('admin.link.create');
-     Route::post('/link/store', [LinksController::class, 'store'])->name('admin.link.store');
-     Route::get('/link/edit/{id}', [LinksController::class, 'edit'])->name('admin.link.edit');
-     Route::post('/link/update/{id}', [LinksController::class, 'update'])->name('admin.link.update');
-     Route::get('/link/destroy/{id}', [LinksController::class, 'destroy'])->name('admin.link.destroy');
+    // Links
+    Route::get('/links', [LinksController::class, 'index'])->name('admin.links');
+    Route::get('/link/create', [LinksController::class, 'create'])->name('admin.link.create');
+    Route::post('/link/store', [LinksController::class, 'store'])->name('admin.link.store');
+    Route::get('/link/edit/{id}', [LinksController::class, 'edit'])->name('admin.link.edit');
+    Route::post('/link/update/{id}', [LinksController::class, 'update'])->name('admin.link.update');
+    Route::get('/link/destroy/{id}', [LinksController::class, 'destroy'])->name('admin.link.destroy');
 
-     // Settings
+    // Partners
+    Route::get('/partners', [PartnerController::class, 'index'])->name('admin.partners');
+    Route::get('/partner/create', [PartnerController::class, 'create'])->name('admin.partner.create');
+    Route::post('/partner/store', [PartnerController::class, 'store'])->name('admin.partner.store');
+    Route::get('/partner/edit/{id}', [PartnerController::class, 'edit'])->name('admin.partner.edit');
+    Route::post('/partner/update/{id}', [PartnerController::class, 'update'])->name('admin.partner.update');
+    Route::get('/partner/destroy/{id}', [PartnerController::class, 'destroy'])->name('admin.partner.destroy');
+
+    // Settings
     Route::get('/settings', [SettingsController::class, 'index'])->name('admin.settings');
     Route::get('/setting/edit/{id}', [SettingsController::class, 'edit'])->name('admin.setting.edit');
     Route::post('/setting/update/{id}', [SettingsController::class, 'update'])->name('admin.setting.update');
+
+    // Prices
+    Route::get('/prices', [PriceController::class, 'index'])->name('admin.prices');
+    Route::get('/price/edit/{id}', [PriceController::class, 'edit'])->name('admin.price.edit');
+    Route::post('/price/update/{id}', [PriceController::class, 'update'])->name('admin.price.update');
 });
