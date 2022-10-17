@@ -38,6 +38,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-M68ZVPF');
     </script>
+    <!-- End Google Tag Manager -->
     <style>
         /*<!-- video section -->*/
         .videosectioncontsinaer {
