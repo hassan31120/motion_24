@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Link;
+use App\Models\Partner;
 use App\Models\Price;
 use App\Models\Setting;
 use App\Models\User;
@@ -13,7 +14,8 @@ class MainController extends Controller
     public function index(){
         $setting = Setting::find(1);
         $links = Link::latest()->limit(3)->get();
-        return view('main.main', compact('links', 'setting'));
+        $partners = Partner::all();
+        return view('main.main', compact('links', 'setting', 'partners'));
     }
 
     public function videos(){

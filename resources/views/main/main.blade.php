@@ -123,24 +123,9 @@
     <h1 class="text-center pt-5 mb-5 fw-bold" id="partners" style="color:#dca454;">شركاء النجاح</h1>
     <div class="container direction">
         <section class="customer-logos slider">
-            <div class="slide"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
-                    alt="logo"></div>
-            <div class="slide"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
-                    alt="logo"></div>
-            <div class="slide"><img
-                    src="https://img.freepik.com/free-psd/3d-square-with-facebook-logo_125540-1565.jpg?w=2000"
-                    alt="logo"></div>
-            <div class="slide"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
-                    alt="logo"></div>
-            <div class="slide"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
-                    alt="logo"></div>
-            <div class="slide"><img
-                    src="https://img.freepik.com/free-psd/3d-square-with-facebook-logo_125540-1565.jpg?w=2000"
-                    alt="logo"></div>
+            @foreach ($partners as $partner)
+                <div class="slide"><img src="{{ asset($partner->image) }}" alt="logo"></div>
+            @endforeach
         </section>
     </div>
 @endsection
