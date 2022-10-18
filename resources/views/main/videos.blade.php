@@ -42,3 +42,27 @@
         </div>
     </div>
 @endsection
+
+
+@section('footer_item')
+    <div class="footer-cta pt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-md-4 mb-30 text-center">
+                <div class="single-cta">
+                    <div class="cta-text">
+                        <h1 class="fw-bold text-center text-light">
+                            <strong class=" text-light fw-bolder"> قم بإتمام طلبك الان </strong>
+                        </h1>
+
+                        <div class=" col-md-12 text-center mt-3">
+                            <a href="{{ route('prices') }}" class="btn btn-success  btn-lg fw-bold" role="button">
+                                <h2 class="fw-bold">اطلب الان</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+

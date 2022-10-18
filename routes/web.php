@@ -31,6 +31,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [MainController::class, 'index'])->name('main');
 Route::get('/works', [MainController::class, 'videos'])->name('videos');
+Route::get('/prices', [MainController::class, 'prices'])->name('prices');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'isAdmin'], function () {
     // Users

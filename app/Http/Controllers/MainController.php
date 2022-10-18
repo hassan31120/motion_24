@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Link;
+use App\Models\Price;
 use App\Models\Setting;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -19,5 +20,11 @@ class MainController extends Controller
         $setting = Setting::find(1);
         $links = Link::latest()->paginate(6);
         return view('main.videos', compact('setting', 'links'));
+    }
+
+    public function prices(){
+        $setting = Setting::find(1);
+        $prices = Price::find(1);
+        return view('main.prices', compact('setting', 'prices'));
     }
 }

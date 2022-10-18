@@ -11,16 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--aos-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-    </script>
-    <style>
-        body {
-            overflow-x: hidden;
-        }
-    </style>
+    {{-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> --}}
+
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -39,37 +31,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-M68ZVPF');
     </script>
     <!-- End Google Tag Manager -->
-    <style>
-        /*<!-- video section -->*/
-        .videosectioncontsinaer {
-            height: 500px;
-        }
 
-        .videosection {
-            height: 500px;
-        }
-
-        .videosection iframe {
-            width: 100%;
-            height: 500px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .videosectioncontsinaer {
-                height: 300px;
-            }
-
-            .videosection {
-                height: 300px;
-            }
-
-            .videosection iframe {
-                width: 100%;
-                height: 300px;
-            }
-        }
-    </style>
-    <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -96,10 +58,10 @@
                             <a class="nav-link text-dark" href="{{ route('main') }}#motion">اهمية الموشن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ser text-dark" href="#services">اعمالنا</a>
+                            <a class="nav-link ser text-dark" href="{{ route('videos') }}">اعمالنا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#contactUs">اطلب الان</a>
+                            <a class="nav-link text-dark" href="{{ route('prices') }}">اطلب الان</a>
                         </li>
                     </ul>
                 </div>

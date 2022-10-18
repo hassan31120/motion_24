@@ -57,10 +57,9 @@
     <!-- video section -->
     <div class="container">
         <div class="row d-flex justify-content-center videosectioncontsinaer">
-            <div class="col-lg-8 col-md-10 col-sm-12 videosection" >
+            <div class="col-lg-8 col-md-10 col-sm-12 videosection">
                 <div class="embed-responsive embed-responsive-21by9">
-                    <iframe class=" rounded" src="{{ $setting->v_link }}" title="YouTube video player"
-                        frameborder="0"
+                    <iframe class=" rounded" src="{{ $setting->v_link }}" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
@@ -77,8 +76,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="  border rounded">
                         <div class="embed-responsive embed-responsive-16by9 rounded">
-                            <iframe class=" rounded" src="{{ $link->link }}"
-                                title="YouTube video player" frameborder="0"
+                            <iframe class=" rounded" src="{{ $link->link }}" title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
@@ -120,5 +118,51 @@
     </div>
     <div class="view text-center">
         <img src="{{ asset($setting->image) }}" class="img-fluid" alt="sample image">
+    </div>
+
+    <h1 class="text-center pt-5 mb-5 fw-bold" id="partners" style="color:#dca454;">شركاء النجاح</h1>
+    <div class="container direction">
+        <section class="customer-logos slider">
+            <div class="slide"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
+                    alt="logo"></div>
+            <div class="slide"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
+                    alt="logo"></div>
+            <div class="slide"><img
+                    src="https://img.freepik.com/free-psd/3d-square-with-facebook-logo_125540-1565.jpg?w=2000"
+                    alt="logo"></div>
+            <div class="slide"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
+                    alt="logo"></div>
+            <div class="slide"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlb6Je0tUMgVWx7WGxDcJl5ik6B1wfXKzftGbTzB37CQ&s"
+                    alt="logo"></div>
+            <div class="slide"><img
+                    src="https://img.freepik.com/free-psd/3d-square-with-facebook-logo_125540-1565.jpg?w=2000"
+                    alt="logo"></div>
+        </section>
+    </div>
+@endsection
+
+@section('footer_item')
+    <div class="footer-cta pt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-md-4 mb-30 text-center">
+                <div class="single-cta">
+                    <div class="cta-text">
+                        <h1 class="fw-bold text-center text-light">
+                            <strong class=" text-light fw-bolder"> قم بإتمام طلبك الان </strong>
+                        </h1>
+
+                        <div class=" col-md-12 text-center mt-3">
+                            <a href="{{ route('prices') }}" class="btn btn-success  btn-lg fw-bold" role="button">
+                                <h2 class="fw-bold">اطلب الان</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

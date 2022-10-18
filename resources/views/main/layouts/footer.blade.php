@@ -3,31 +3,14 @@
     <div class="container-fluid" id="footer">
         <footer class="fw-bold">
             <div class="container">
-                <div class="footer-cta pt-5 pb-5">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-6 col-md-4 mb-30 text-center">
-                            <div class="single-cta">
-                                <div class="cta-text">
-                                    <h1 class="fw-bold text-center text-light">اطلب
-                                        الان فقط ب<strong class=" text-light fw-bolder"> {{ $setting->value }} </strong> ريال</h1>
-
-                                    <div class=" col-md-12 text-center mt-3">
-                                        <a href="{{ $setting->link }}" target="_blank" class="btn btn-success  btn-lg fw-bold" role="button">
-                                            <h2 class="fw-bold">واتساب</h2>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @yield('footer_item')
                 <div class="copyright-area">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-6 col-lg-6 ">
                                 <div class="copyright-text ">
-                                    <p class=" text-light">حقوق الطبع والنشرCopyright &copy; لعام2022 محفوظة ل<strong style="color:rgb(31, 92, 92)">مؤسسة المنى ومنصة 24 تك</strong>
-                                        أو الشركات التابعة لها
+                                    <p class=" text-light">حقوق الطبع والنشرCopyright &copy; لعام2022 محفوظة ل<strong
+                                            style="color:rgb(31, 92, 92)">مؤسسة المنى ومنصة 24 تك</strong>
                                 </div>
                             </div>
                         </div>
@@ -35,12 +18,39 @@
                 </div>
         </footer>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    {{-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> --}}
     {{-- <script src="./js/jquery/jquery-3.4.1.min.js"></script> --}}
     <script src="{{ asset('main/js/index.js') }}"></script>
     <script>
-
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1250,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }]
+            });
+        });
     </script>
-</body>
+    </body>
 
-</html>
+    </html>
