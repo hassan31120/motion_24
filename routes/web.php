@@ -5,7 +5,10 @@ use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\Admin\PriceController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\UsersController;
+use App\Http\Controllers\FatoorahFatoorah;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\MyFatoorahController;
+use App\Http\Controllers\testt;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -76,3 +79,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'isAdmin'], function () {
     Route::get('/price/edit/{id}', [PriceController::class, 'edit'])->name('admin.price.edit');
     Route::post('/price/update/{id}', [PriceController::class, 'update'])->name('admin.price.update');
 });
+
+
+Route::get('/payment/success', [MainController::class, 'successPay'])->name('payment.success');
+Route::get('/payment/error', [MainController::class, 'errorPay'])->name('payment.error');
+
+Route::post('/pay', [FatoorahFatoorah::class, 'payOrder'])->name('pay.link');

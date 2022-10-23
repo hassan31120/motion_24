@@ -29,4 +29,15 @@ class MainController extends Controller
         $prices = Price::find(1);
         return view('main.prices', compact('setting', 'prices'));
     }
+
+    public function successPay(){
+        $setting = Setting::find(1);
+        return view('main.success', compact('setting'));
+    }
+
+    public function errorPay(){
+        $setting = Setting::find(1);
+        $prices = Price::find(1);
+        return view('main.error', compact('setting', 'prices'));
+    }
 }

@@ -549,3 +549,44 @@ text-decoration: none;
         height: 300px;
     }
 }
+
+
+.modalcss
+{
+  background-color: hsla(0, 0%, 92%, 0);
+}
+.modalcss .modal-content
+{
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+.modalcss .modal-content .modal-header
+{
+  border: none;
+}
+/* .modalcss .modal-body
+{
+  background-color: #461b1b00;
+} */
+/* .modalcss .modal-body .form-outline
+{
+  background-color: #23f582;
+} */
+.modalcss .modal-body label
+{
+  color: black;
+  font-weight: bold;
+}
+.modalcss .modal-body input
+{
+ border: solid 1px #147aff;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ background-color: transparent;
+ margin-bottom: 30px;
+}
+
+.modal-header .btn-close {
+    position: absolute; left: 10px;
+}
